@@ -1,0 +1,83 @@
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/?status=TO%20DO
+
+###
+
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/?priority=HIGH
+
+###
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/?priority=HIGH&status=IN%20PROGRESS
+
+###
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/?search_q=Buy
+
+###
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/?category=WORK&status=DONE
+
+###
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/?category=HOME
+
+###
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/?category=LEARNING&priority=HIGH
+
+###
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/1
+
+###
+GET https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/agenda/?date=2021-1-12
+
+###
+POST https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/
+Content-type: application/json
+
+{
+  "id": 6,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO",
+  "category": "HOME",
+  "dueDate": "2021-02-22"
+}
+
+###
+PUT https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/2
+Content-type: application/json
+
+{
+  "status": "DONE"
+}
+
+###
+PUT https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/2
+Content-type: application/json
+
+{
+  "priority": "HIGH"
+}
+
+###
+PUT https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/2
+Content-type: application/json
+
+{
+  "todo": "Clean the garden"
+}
+
+###
+PUT https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/2
+Content-type: application/json
+
+{
+  "category": "LEARNING"
+}
+
+###
+PUT https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/2
+Content-type: application/json
+
+{
+  "dueDate": "2021-01-12"
+}
+
+###
+
+DELETE https://venkatadeepakzabmsnjscadoqbs.drops.nxtwave.tech/todos/6
